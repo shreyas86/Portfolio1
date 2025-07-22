@@ -1,0 +1,37 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border scroll-smooth;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  body {
+    @apply  text-black;
+    overflow-x: hidden;
+  }
+}
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
+}

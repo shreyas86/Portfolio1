@@ -1,0 +1,129 @@
+.hero-i-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 4rem;
+  
+}
+
+.profile-pic {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    /* border: 3px solid maroon; */
+}
+
+.hero-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: 600;
+}
+
+.hero-about h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-about p {
+    color: grey;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.hero-contact {
+    display: flex;
+    gap: 4px;
+    color: grey;
+    font-size: 1rem;
+    font-weight: 480;
+}
+@media (max-width:758px) {
+
+    /* .hero-title{
+       font-size: 1.5rem;
+    font-weight: 600;
+    }
+    .hero-subtitle{
+        font-size: 1rem;
+    } */
+    
+}
+@media(max-width:650px){
+    .hero-image{
+        display: none;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-contact{
+        font-size: 1rem;
+        text-align: center;
+        align-items:center;
+        gap: 2px;
+        padding: 3px;
+    }
+    .divider{
+        font-size: 1.5rem;
+        font-weight: 50;
+        color: gray;
+    }
+     
+    
+}
+@media(max-width:470px){
+.hero-title{
+       font-size: 1.6rem;
+    font-weight: 700;
+
+    }
+    .hero-container{
+        gap: 1rem;
+         padding-top: 2rem;
+    }
+    .hero-subtitle{
+        font-size: 1rem;
+                font-weight: 600;
+
+    }
+    .hero-i-container{
+        gap:1rem ;
+    }
+    .hero-content{
+        gap: 2px;
+    }
+    .hero-about h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.hero-contact{
+    font-size: 0.7rem;
+}
+
+.hero-about p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+}

@@ -1,0 +1,74 @@
+@keyframes typing {
+  0% {
+    width: 0;
+    visibility: visible;
+  }
+  100% {
+    width: 28ch;
+    visibility: visible;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Typing line setup */
+.typing-line {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black;
+
+  /* Prevent showing early */
+  width: 0;
+  visibility: hidden;
+
+  /* Typing + blink animation */
+  animation:
+    typing 2.5s steps(28) 1s forwards,
+    blink 0.7s step-end infinite;
+}
+
+/* Common base for appearing lines */
+.appear-line {
+  opacity: 0;
+  visibility: hidden;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+/* Appear after typing completes */
+.appear-1 {
+  animation-delay: 3.6s;
+}
+
+.appear-2 {
+  animation-delay: 4.6s;
+}
+
+.appear-3 {
+  animation-delay: 5.2s;
+}
+
+.appear-4 {
+  animation-delay: 5.8s;
+}
