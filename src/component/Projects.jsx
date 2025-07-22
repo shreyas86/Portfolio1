@@ -108,7 +108,7 @@ const Projects = () => {
 <p className="text-xs md:text-lg text-center text-gray-500">
   Would you like to get in touch? Just shoot me an{' '}
   <a
-    href="https://mail.google.com/mail/?view=cm&fs=1&to=shreyasin153@gmail.com&su=Connect%20to%20Shreyas"
+    href="mailto:shreyasin153@gmail.com?subject=Let's%20Connect&body=Hi%20Shreyas,%20I%20would%20like%20to%20connect%20with%20you."
     target="_blank"
     rel="noopener noreferrer"
     className="text-blue-600"

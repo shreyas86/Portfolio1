@@ -7,7 +7,7 @@ const FloatingBar = () => {
     { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/shreyashegde10", label: "LinkedIn" },
     {
       icon: <FaEnvelope />,
-      url: "https://mail.google.com/mail/?view=cm&fs=1&to=shreyasin153@gmail.com&su=Let's%20Connect&body=Hi%20Shreyas%2C%20I%20would%20like%20to%20connect%20with%20you.",
+      url: "mailto:shreyasin153@gmail.com?subject=Let's%20Connect&body=Hi%20Shreyas,%20I%20would%20like%20to%20connect%20with%20you.",
       label: "Email"
     },
     // { icon: <FaSun />, url: "#", label: "Theme" }
@@ -22,7 +22,7 @@ const FloatingBar = () => {
         >
           <a
             href={link.url}
-            target={link.url.startsWith("http") ? "_blank" : "_self"}
+            target={link.url.startsWith("http") || link.url.startsWith("mailto:") ? "_blank" : "_self"}
             rel="noopener noreferrer"
             className="text-black text-sm md:text-base"
           >
