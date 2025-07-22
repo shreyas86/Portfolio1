@@ -66,6 +66,7 @@ const Projects = () => {
       {/* Image */}
       <div className="rounded-md overflow-hidden mb-3">
         <img
+        loading='lazy'
           src={project.image}
           alt={project.title}
           className="w-full md:h-60 object-cover"

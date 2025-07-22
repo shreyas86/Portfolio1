@@ -37,7 +37,7 @@ const SkillRow = ({ items, direction }) => {
       <div className={`flex w-max ${animationClass}`}>
         {[...items, ...items].map((skill, index) => (
           <div key={index} className="flex flex-col items-center text-center mx-3 md:mx-6 my-4 min-w-[80px]">
-            <img src={skill.icon} alt={skill.name} className="h-10 w-10 md:h-12 md:w-12 object-contain transition duration-300" />
+            <img src={skill.icon} loading='lazy' alt={skill.name} className="h-10 w-10 md:h-12 md:w-12 object-contain transition duration-300" />
             <p className="text-xs md:text-sm mt-2 text-gray-600 whitespace-nowrap">{skill.name}</p>
           </div>
         ))}

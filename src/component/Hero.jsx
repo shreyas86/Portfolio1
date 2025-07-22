@@ -11,6 +11,7 @@ const Hero = () => {
 
       <div className="hero-image">
         <img
+        loading="lazy"
           src={profile}
           alt="Shaikh Sajed"
           className="profile-pic border-3 border-red-800"
