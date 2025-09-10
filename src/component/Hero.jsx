@@ -2,7 +2,7 @@ import React from "react";
 // Link to the CSS file
 import "../CSS/Hero.css"
 import profile from '/public/mee.jpg'
-import resume from '/public/.SHREYAS-RESUME.pdf'
+import resume from '/public/RESUME_SHREYAS.pdf'
 const Hero = () => {
   return (
     <section className="hero-container" id="home">

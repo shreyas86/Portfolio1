@@ -7,6 +7,7 @@ import tailwind from "/public/icons/tailwind-css.png";
 import react from "/public/icons/react.png";
 import html from "/public/icons/html.png";
 import aws from "/public/icons/aws.png";
+import nextjs from "/public/icons/nextjs.png";
 import node from "/public/icons/nodejs.png";
 import Express from "/public/icons/express.png";
 import Mongodb from "/public/icons/mongodb.png";
@@ -23,6 +24,7 @@ const skills = [
   { name: "MongoDB", icon: Mongodb },
   { name: "CSS", icon: CSS },
   { name: "Git", icon: Git },
+  { name: "Next js", icon: nextjs },
 ];
 
 const SkillRow = ({ items, direction }) => {
